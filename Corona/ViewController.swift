@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         
         chartDataSet.valueTextColor = .black
         chartDataSet.entryLabelColor = .black
-        chartDataSet.colors = [.systemRed, .blue, .lightGray, .label, .brown, .clear, .cyan, .darkGray, .darkText, .green, .link, .magenta, .orange, .yellow, .purple, .systemPink, .lightText, .systemYellow]
+        chartDataSet.colors = [.systemRed, .systemBlue, .systemCyan, .systemFill, .systemGray, .systemMint, .systemPink, .systemTeal]
         let data = PieChartData(dataSet: chartDataSet)
         self.pieChartView.data = data
         
@@ -105,6 +105,14 @@ extension ViewController: ChartViewDelegate {
         
         //MARK: 선택된 데이터를 가지고, 상세화면 표시
         //MARK: ViewController와 NavigationView를 연결?
+        
+        if let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController {
+            detailViewController.coronaData = selectedCountryData
+            detailViewController.navigationItem.title = selectedCountryData.countryName
+            
+            self.navigationController?.pushViewController(detailViewController, animated: true)
+        }
+            
     }
 }
 

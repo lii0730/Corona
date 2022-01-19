@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		66C0FABCE018D7793C13A1F2 /* Pods_Corona.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C558764DE9C8E39E0E73D4 /* Pods_Corona.framework */; };
+		9907D0BC2798462E00E510ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907D0BB2798462E00E510ED /* DetailViewController.swift */; };
+		9907D0C22798629600E510ED /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9907D0C12798629600E510ED /* MyCell.swift */; };
 		99D724262795A46E00923204 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D724252795A46E00923204 /* AppDelegate.swift */; };
 		99D724282795A46E00923204 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D724272795A46E00923204 /* SceneDelegate.swift */; };
 		99D7242A2795A46E00923204 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D724292795A46E00923204 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		84E58397130AE217F5F1BCD7 /* Pods-Corona.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Corona.release.xcconfig"; path = "Target Support Files/Pods-Corona/Pods-Corona.release.xcconfig"; sourceTree = "<group>"; };
+		9907D0BB2798462E00E510ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9907D0C12798629600E510ED /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
 		99D724222795A46E00923204 /* Corona.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Corona.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D724252795A46E00923204 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		99D724272795A46E00923204 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				99D724302795A47000923204 /* LaunchScreen.storyboard */,
 				99D724332795A47000923204 /* Info.plist */,
 				99D724392795A76B00923204 /* URL.swift */,
+				9907D0BB2798462E00E510ED /* DetailViewController.swift */,
+				9907D0C12798629600E510ED /* MyCell.swift */,
 			);
 			path = Corona;
 			sourceTree = "<group>";
@@ -223,6 +229,8 @@
 				99D7243D2795BD4200923204 /* DataResponse.swift in Sources */,
 				99D7242A2795A46E00923204 /* ViewController.swift in Sources */,
 				99D724262795A46E00923204 /* AppDelegate.swift in Sources */,
+				9907D0BC2798462E00E510ED /* DetailViewController.swift in Sources */,
+				9907D0C22798629600E510ED /* MyCell.swift in Sources */,
 				99D724282795A46E00923204 /* SceneDelegate.swift in Sources */,
 				99D7243A2795A76C00923204 /* URL.swift in Sources */,
 			);

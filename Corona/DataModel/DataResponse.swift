@@ -40,5 +40,7 @@ struct CoronaData: Codable {
     let percentage: String
     let newCcase: String
     let newFcase: String
+    
+    let count: Int = 8
 }
 
