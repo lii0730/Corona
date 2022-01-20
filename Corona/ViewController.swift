@@ -81,10 +81,22 @@ class ViewController: UIViewController {
         
         chartDataSet.valueTextColor = .black
         chartDataSet.entryLabelColor = .black
-        chartDataSet.colors = [.systemRed, .systemBlue, .systemCyan, .systemFill, .systemGray, .systemMint, .systemPink, .systemTeal]
+        chartDataSet.sliceSpace = 1
+        chartDataSet.xValuePosition = .outsideSlice
+        chartDataSet.valueLinePart1OffsetPercentage = 0.6
+        chartDataSet.valueLinePart1Length = 0.2
+        chartDataSet.valueLinePart2Length = 0.3
+        
+        chartDataSet.colors = ChartColorTemplates.colorful() +
+        ChartColorTemplates.joyful() +
+        ChartColorTemplates.liberty() +
+        ChartColorTemplates.material() +
+        ChartColorTemplates.pastel() +
+        ChartColorTemplates.vordiplom()
+        
         let data = PieChartData(dataSet: chartDataSet)
         self.pieChartView.data = data
-        
+        self.pieChartView.spin(duration: 0.3, fromAngle: self.pieChartView.rotationAngle, toAngle: self.pieChartView.rotationAngle + 80)
     }
     
     private func createData(data: CoronaData) -> PieChartDataEntry {
